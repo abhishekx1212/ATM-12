@@ -1,0 +1,17 @@
+@media (max-width:383px){
+      .butns{
+        width: 144px;
+      }
+}
+
+@media (max-width:361px){
+    .btn-box{
+        justify-content: start;
+      }
+}
+
+@media (max-width:327px){
+    h5{
+        line-height: 0.95;
+    }
+}

@@ -1,8 +1,9 @@
 
+
 body {
   font-family: "Roboto Mono", monospace;
   color: white;
-  background: url(../images/i-1.png);
+  background: url(../images/i-3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,6 +27,15 @@ body {
   background-color: rgba(225, 225, 225, 0.7);
 }
 
+.input-2{
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 70%;
+  font-size: 18px;
+  background-color: rgba(225, 225, 225, 0.7);
+}
+
 .text{
   border-radius: 10px;
   border: 1px solid black;
@@ -33,7 +43,7 @@ body {
   background-color: rgba(225, 225, 225, 0.7);
 }
 
-.input::placeholder{
+.input::placeholder,.input-2::placeholder{
   color: white;
   font-size: 18px;
 }

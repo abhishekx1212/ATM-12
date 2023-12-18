@@ -12,16 +12,31 @@
     <title>Document</title>
     <style>
         #hello{
-            display: none;
+            /* display: none; */
+          opacity: 0;
+          transition: 0.5s ease-in-out;
+        }
+
+        .atm-content{
+            position: relative;
+        }
+
+        .user-pass{
+            position: absolute;
+            right: 0;
         }
     </style>
 </head>
 
 <body>
-    <div class="container pt-4">
+    <div class="container py-5">
         <div class="row justify-content-center px-3">
             <div class="col-md-7 col-lg-5 col-xl-4 border">
                 <div class="atm-content pt-2 pb-4">
+                    <div class="user-pass">
+                        <h6>user: qwer</h6>
+                        <h6>pass: 1234</h6>
+                    </div>
                     <h2 class="text-center">ATM</h2>
                     <h5 class="mt-4">USER:</h5>
                     <input type="text" id="user" placeholder="Enter User" class="input">
@@ -29,8 +44,10 @@
                     <input type="password" id="pin" placeholder="Enter pin" class="input">
                     <input type="button" id="sub-btn" value="Submit" onclick="doProcess()" class="butns btn mt-3"
                     style="width: 100%;">
-                    <a href="index2.html" id="hello"><button class="butns btn mt-3" style="width: 100%;">ENTER</button></a>
-                    <input type="text" id="result" class="input mt-3" placeholder="....">
+                    <div class="login d-flex justify-content-between">
+                        <input type="text" id="result" class="input-2 mt-3" placeholder="....">
+                        <a href="index2.html" id="hello"><button class="butns btn mt-3" style="width: 100%;">ENTER</button></a>
+                    </div>
                 </div>
             </div>
         </div>
